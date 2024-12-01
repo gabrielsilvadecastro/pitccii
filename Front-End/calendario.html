@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Front-End/styles/home.css" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="side-left">
+        <div id="background-name">
+          <p class="filter-title">Calendário</p>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="side-right">
+        <div class="olympic-logo">
+            <a href="../Front-End/index.html"> 
+                <img src="../Front-End/assets/icons/HalfLogo - Paris 2024.png" alt="" />
+            </a>
+        </div>
+        <div>
+        </div>
+      </div>
+    </header>
+
+    <content id="content">
+      <filter id="filter-container">
+        <div class="title-container">
+          <div class="horizontal-line-complete"></div>
+          <div class="filter-title">FILTRO</div>
+          <div class="horizontal-line"></div>
+        </div>
+        <div class="filter-options">
+          <div class="option-container">
+            <p class="option-title">Peito</p>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="option-container">
+            <p class="option-title">Costas</p>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="option-container">
+            <p class="option-title">Borboleta</p>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="option-container">
+            <p class="option-title">Livre</p>
+            <div class="horizontal-line"></div>
+          </div>
+          <div class="option-container">
+            <p class="option-title">Medley</p>
+            <div class="horizontal-line"></div>
+          </div>
+        </div>
+      </filter>
+
+      <matches id="matchmaking-container">
+      </matches>
+    </content>
+
+    <menu>
+      <div id="coverPage" class="hidden">
+        <div class="side-menu">
+          <div id="background-close-menu">
+            <img class="close-icon" src="../assets/icons/Excluir.png" alt="" />
+          </div>
+          <div class="menu-options-container">
+            <div class="side-menu-options-container">
+              <p class="side-menu-title">Navegação</p>
+              <a href="../index.html" class="side-menu-option">Início</a>
+            </div>
+            <div class="side-menu-options-container">
+              <p class="side-menu-title">Atletas</p>
+              <a href="../tela_juiz/criar_atleta.html" class="side-menu-option"
+                >Cadastrar Atleta</a
+              >
+              <a href="../tela_juiz/buscar_atleta.html" class="side-menu-option"
+                >Buscar Atletas</a
+              >
+            </div>
+            <div class="side-menu-options-container">
+              <p class="side-menu-title">Partida</p>
+              <a href="../tela_juiz/criar_partida.html" class="side-menu-option"
+                >Criar Partida</a
+              >
+              <a
+                href="../tela_juiz/buscar_partida.html"
+                class="side-menu-option"
+                >Buscar Partida</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="menu-image">
+          <img src="../assets/images/Olympic Tower.png" alt="" />
+        </div>
+      </div>
+    </menu>
+    <script src="../Front-End/script/home.js"></script>
+    <script src="../Front-End/tela_juiz/crud_partida/filtro_calendary.js"></script>
+  </body>
+</html>

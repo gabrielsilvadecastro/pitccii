@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/cadastro_juiz.css" />
+    <title>Cadastro de Juiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form_container">
+        <div class="form">
+          <a class="login_title">CADASTRO DE JUIZ</a>
+          <a class="login_subtitle">Insira as suas informações de cadastro</a>
+          <br />
+          <div id="error-message" class="error-message"></div>
+          <!-- Div para exibir mensagem de erro -->
+          <form id="loginForm">
+            <div class="side_form">
+              <div class="side_left">
+                <div class="input-field">
+                  <p class="input-title">Nome</p>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <p class="input-title">Sobrenome</p>
+                  <input
+                    type="text"
+                    id="sobrenome"
+                    name="sobrenome"
+                    placeholder="Sobrenome"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <p class="input-title">Email</p>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <p class="input-title">Senha</p>
+                  <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Senha"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="side_right">
+                <div class="input-field">
+                  <p class="input-title">Categoria de Arbitragem</p>
+                  <input
+                    type="text"
+                    id="categoriaArbitragem"
+                    name="categoriaArbitragem"
+                    placeholder="Categoria de Arbitragem"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <p class="input-title">País</p>
+                  <input
+                    type="text"
+                    id="pais"
+                    name="pais"
+                    placeholder="País"
+                    required
+                  />
+                </div>
+                <div class="select-field">
+                  <p class="input-title">Nível de Certificação</p>
+                  <select id="certification-select" name="nivelCertificacao">
+                    <option value="1">Nível 1</option>
+                    <option value="2">Nível 2</option>
+                    <option value="3">Nível 3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="side_buttons">
+              <button type="submit" class="register_button">Registrar</button>
+              <a class="back_login" href="../tela_juiz/login.html"
+                ><button type="button" class="login_button">Logar</button></a
+              >
+            </div>
+          </form>
+          <p class="register">
+            <a class="back-link" href="../index.html">Voltar</a>
+            para o menu
+          </p>
+        </div>
+      </div>
+      <img class="side_image" src="../assets/images/Swimmer Cadastration.png" />
+    </div>
+    <script src="../script/post_cadastro_juiz.js"></script>
+  </body>
+</html>

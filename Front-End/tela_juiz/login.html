@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form_container">
+        <div class="form">
+          <a class="login_title">LOGIN</a>
+          <a class="login_subtitle">Acesse seu usuário ou cadastre-se</a>
+          <br />
+          <div id="error-message" class="error-message"></div>
+          <!-- Div para exibir mensagem de erro -->
+          <form id="loginForm">
+            <div class="input-field">
+              <p class="input-title">Usuário</p>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite o seu email"
+                required
+              />
+            </div>
+            <div class="input-field">
+              <p class="input-title">Senha</p>
+              <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha"
+                required
+              />
+            </div>
+        
+            <br />
+            <button type="submit" class="login_button">Entrar</button>
+          </form>
+          <p class="register">
+            Não tem uma conta?
+            <a class="register-link" href="../tela_juiz/cadastro_juiz.html"
+              >Cadastre-se</a
+            >
+          </p>
+          <p class="register">
+            <a class="back-link" href="../index.html">Voltar</a>
+            para o menu
+          </p>
+        </div>
+      </div>
+      <img class="side_image" src="../assets/images/Swimmer Cadastration.png" />
+    </div>
+
+    <script src="../script/login.js"></script>
+    <script src="../script/post_login_juiz.js"></script>
+  </body>
+</html>

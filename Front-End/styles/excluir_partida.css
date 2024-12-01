@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, white, white  ); /* Fundo gradiente */
+}
+
+#idPartida{
+display: none;
+}
+
+#header {
+    background-color: #6030d1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="datetime-local"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+#content {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 18px; /* Tamanho da fonte aumentado */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px); /* Ajuste para levar em conta a largura da borda */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black; /* Borda preta */
+    border-radius: 6px; /* Bordas arredondadas */
+    box-sizing: border-box;
+    font-size: 16px; /* Tamanho da fonte aumentado */
+}
+
+button {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    background-color: #6030d1; /* Cor do botão */
+    border: none;
+    border-radius: 6px; /* Bordas arredondadas */
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color:#6030d1; /* Cor de destaque ao passar o cursor */
+}
+
+a {
+    text-decoration: none;
+    color:#6030d1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    grid-template-rows: repeat(2, auto); /* Duas linhas */
+    gap: 10px; /* Espaçamento entre as caixas de seleção */
+}
+
+/* Estilizando as caixas de seleção e os rótulos */
+#especializacoes input[type="checkbox"] {
+    display: inline-block; /* Alinha as caixas de seleção em linha */
+}
+
+#especializacoes label {
+    display: inline-block; /* Alinha os rótulos em linha */
+    font-size: 16px;
+    color: #555;
+    margin-right: 20px; /* Espaçamento entre as caixas de seleção e os rótulos */
+    margin-bottom: 50px; 
+}
+
+
+
+
+
+
+

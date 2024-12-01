@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/buscar_atleta.css" />
+    <title>Buscar Atleta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form id="buscarAtletaForm">
+          <p class="form-title">Buscar Atleta</p>
+          <p class="form-subtitle">Insira o nome completo para a busca</p>
+          <div class="input-container">
+            <p class="input-title">Nome do Atleta</p>
+            <input
+              class="input-field"
+              type="text"
+              id="nomeAtleta"
+              name="nomeAtleta"
+              placeholder="Nome"
+              required
+            />
+          </div>
+          <div class="search-button-container">
+            <button class="search-athlete-button" type="submit">
+              Buscar Atleta
+            </button>
+          </div>
+        </form>
+        <form id="buscarTodosAtletasForm">
+          <div class="search-all-athletes-container">
+            <button class="search-all-athletes-button" type="submit">
+              Buscar Todos os Atletas
+            </button>
+          </div>
+        </form>
+        <div class="back-to-landin">
+          <p class="register">
+            <a class="back-link" href="../tela_juiz/home.html">Voltar</a>
+            para calendário
+          </p>
+        </div>
+        <div id="resultadoBusca"></div>
+      </div>
+      <img
+        class="side-image"
+        src="../assets/images/Swimmer Cadastration.png"
+        alt=""
+      />
+
+      <!-- <a class="criar_aatleta" href="criar_atleta.html">Criar Atleta</a></li> -->
+    </div>
+
+    <script src="crud_atleta/get_do_atleta.js"></script>
+    <!-- Script JavaScript para buscar o atleta -->
+  </body>
+</html>

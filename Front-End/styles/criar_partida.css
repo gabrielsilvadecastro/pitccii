@@ -1,0 +1,274 @@
+/*====  RESET ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ul{
+  list-style: none;
+  }
+  
+a{
+  text-decoration: none;
+}
+  
+img{
+  width: 100%;
+  height: auto;
+}
+
+/*====  CONTAINER ============================ */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+  
+.side-image {
+    max-width: 42rem;
+}
+
+/*====  FORM ====================== */
+
+.form-container {
+    padding: 4rem 5rem;
+    margin: auto;
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-info{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    gap: 16px;
+}
+  
+.form-title {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+  
+.form-subtitle {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    text-align: center;
+    color: #636364;
+}
+  
+.input-title {
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.input-field{
+    height: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.select-info-field{
+    width: 300px;
+    height: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.select-field{
+    width: 400px;
+    height: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#atletasContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.athlete-layer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aditional-informations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.submit-button{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 12px;
+    background-color: #6030d1;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.back-button{
+    width: 28rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    background-color: #6030d1;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+.back-button-title{
+    color: white;
+    text-decoration: none;
+}
+
+.back-to-landin{
+    display: flex;
+    width: 100%;
+    margin-block: auto;
+}
+
+.register {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.back-link {
+    color: #8b39dd;
+    transition: color 0.3s;
+}
+
+@media(max-height: 800px){
+  .form-container {
+    padding: 1rem 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-field {
+    height: 2.2rem;
+    width: 400px;
+    border-radius: 12px;
+    border: 1px solid #c4c4c4;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .input-info-field {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 12px;
+    border: 1px solid #c4c4c4;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .select-info-field{
+    width: 250px;
+    height: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.select-field{
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #C4C4C4;
+    padding-left: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+    #atletasContainer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 16px;
+        gap: 8px;
+}
+
+    .athlete-layer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

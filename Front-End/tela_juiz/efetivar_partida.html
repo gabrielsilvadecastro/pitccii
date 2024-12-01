@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/efetivar_partida.css" />
+  <title>Efetivar Partida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <p class="form-title">Efetivar Partida</p>
+      <p class="form-subtitle">Apure os dados da partida</p>
+      <form id="partidaForm">
+        <div>
+          <input type="number" id="idPartida" name="idPartida" placeholder="id" readonly />
+        </div>
+        <div>
+          <input type="datetime-local" id="dataHoraPartida" name="dataHoraPartida" readonly />
+        </div>
+        <div class="match-info">
+          <div>
+            <p class="input-title">Tipo da Partida</p>
+            <input class="input-info-field" type="text" id="match_type" name="match_type" readonly />
+          </div>
+          <div>
+            <p class="input-title">Juízes</p>
+            <input class="input-info-field" type="text" id="judges" name="judges" placeholder="Juizes" readonly />
+          </div>
+          <div>
+            <p class="input-title">Distância da Prova</p>
+            <input class="input-info-field" type="text" id="distanciaProva" name="distanciaProva" readonly />
+          </div>
+        </div>
+        <p class="form-subtitle-athlete">Atletas Envolvidos</p>
+        <div class="athletes-container">
+          <div class="layer-athletes-container">
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 1</p>
+              <input class="input-field" type="text" id="atleta1Nome" name="atleta1Nome" readonly />
+              <input class="input-field" type="text" id="tempo1" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 2</p>
+              <input class="input-field" type="text" id="atleta2Nome" name="atleta2Nome" readonly />
+              <input class="input-field" type="text" id="tempo2" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+          </div>
+          <div class="layer-athletes-container">
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 3</p>
+              <input class="input-field" type="text" id="atleta3Nome" name="atleta3Nome" readonly />
+              <input class="input-field" type="text" id="tempo3" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 4</p>
+              <input class="input-field" type="text" id="atleta4Nome" name="atleta4Nome" readonly />
+              <input class="input-field" type="text" id="tempo4" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+          </div>
+          <div class="layer-athletes-container">
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 5</p>
+              <input class="input-field" type="text" id="atleta5Nome" name="atleta5Nome" readonly />
+              <input class="input-field" type="text" id="tempo5" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 6</p>
+              <input class="input-field" type="text" id="atleta6Nome" name="atleta6Nome" readonly />
+              <input class="input-field" type="text" id="tempo6" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+          </div>
+          <div class="layer-athletes-container">
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 7</p>
+              <input class="input-field" type="text" id="atleta7Nome" name="atleta7Nome" readonly />
+              <input class="input-field" type="text" id="tempo7" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+            <div class="athletes-layer">
+              <p class="input-title">Atleta 8</p>
+              <input class="input-field" type="text" id="atleta8Nome" name="atleta8Nome" readonly />
+              <input class="input-field" type="text" id="tempo8" name="tempo"
+                pattern="^([0-5][0-9]):([0-5][0-9]):([0-9][0-9])$" placeholder="MM:SS:MS" required>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="text" id="localPartida" placeholder="Local da Partida" name="localPartida" required />
+        </div>
+        <div>
+          <input type="text" id="match_status" name="match_status" placeholder="Status da Partida" required />
+        </div>
+        <div class="aditional-informations">
+          <div>
+            <p class="input-title">Medalha de Ouro</p>
+            <input class="input-aditional-field" type="text" id="gold" name="result" placeholder="Primeiro colocado"
+              readonly />
+          </div>
+          <div>
+            <p class="input-title">Medalha de Prata</p>
+            <input class="input-aditional-field" type="text" id="silver" name="result" placeholder="Segundo colocado"
+              readonly />
+          </div>
+          <div>
+            <p class="input-title">Medalha de Bronze</p>
+            <input class="input-aditional-field" type="text" id="bronze" name="result" placeholder="Terceiro colocado"
+              readonly />
+          </div>
+        </div>
+        
+        <div class="side-buttons">
+          <p class="register">
+            <a class="back-link" href="../tela_juiz/buscar_partida.html">Voltar</a>
+            para busca
+          </p>
+          <button class="submit-button" type="submit">
+            Atualizar Partida
+          </button>
+        </div>
+      </form>
+    </div>
+    <img class src="../assets/images/Swimmer Cadastration.png" alt="">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      for (let i = 1; i <= 8; i++) {
+        let inputId = 'tempo' + i;
+        let input = document.getElementById(inputId);
+        input.addEventListener('input', function (e) {
+          let inputValue = e.target.value;
+          // Remove caracteres não numéricos
+          inputValue = inputValue.replace(/\D/g, '');
+          // Adiciona os ":" automaticamente
+          if (inputValue.length > 2 && inputValue.charAt(2) !== ':') {
+            inputValue = inputValue.slice(0, 2) + ':' + inputValue.slice(2);
+          }
+          if (inputValue.length > 5 && inputValue.charAt(5) !== ':') {
+            inputValue = inputValue.slice(0, 5) + ':' + inputValue.slice(5);
+          }
+          // Limita o tamanho do valor
+          inputValue = inputValue.slice(0, 8);
+          // Atualiza o valor no campo de entrada
+          e.target.value = inputValue;
+        });
+      }
+    });
+  </script>
+
+  <script src="crud_partida/efetivar_partida.js"></script>
+  <!-- Script JavaScript -->
+</body>
+
+</html>

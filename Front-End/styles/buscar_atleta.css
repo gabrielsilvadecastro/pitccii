@@ -1,0 +1,378 @@
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*====  CONTAINER =================== */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.side-image {
+  max-width: 42rem;
+}
+
+/*====  FORM ====================== */
+
+.form-container {
+  padding: 4rem 5rem;
+  margin: auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-subtitle {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  color: #636364;
+}
+
+.input-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.input-field {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #c4c4c4;
+  padding-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input-title {
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.search-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-athlete-button {
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 12px;
+  background-color: #6030d1;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 16px;
+}
+
+.search-all-athletes-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-all-athletes-button {
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 12px;
+  background-color: #6030d1;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: 16px;
+}
+
+.back-to-landin{
+  display: flex;
+  align-items: center;
+}
+
+.register {
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.back-link {
+  color: #8b39dd;
+  transition: color 0.3s;
+}
+
+/*====  RESULT ====================== */
+
+#resultadoBusca {
+  margin-top: 24px;
+  width: 660px;
+  margin-inline: auto;
+}
+
+.lista-atletas {
+  width: 660px;
+  height: 300px;
+  overflow: auto;
+}
+
+.atleta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 16px;
+  height: 280px;
+  width: 600px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.elements-athlete {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.paragraph-title {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 4px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-between;
+}
+
+.icons-container img {
+  width: 24px;
+}
+
+.register {
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  width: 60%;
+  margin-inline: auto;
+}
+
+.back-link {
+  color: #8b39dd;
+  transition: color 0.3s;
+
+}
+
+@media(max-height: 800px){
+
+  /*====  CONTAINER ============= */
+  .form-container {
+    padding: 2rem 3rem;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*====  FORM ========== */
+
+  .select-field-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .select-field-container p {
+    display: flex;
+    align-items: start;
+  }
+  
+  .select-field {
+    width: 60%;
+    height: 2.2rem;
+    border-radius: 12px;
+    border: 1px solid #c4c4c4;
+    padding-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .search-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-match-button {
+    width: 60%;
+    height: 2.2rem;
+    border-radius: 12px;
+    background-color: #6030d1;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 16px;
+  }
+  
+  .search-all-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-all-matchs-button {
+    width: 60%;
+    height: 2.2rem;
+    border-radius: 12px;
+    background-color: #6030d1;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 16px;
+  }
+  
+  /*====  RESULT ================= */
+
+#resultadoBusca {
+  margin-top: 16px;
+}
+
+.lista-atletas {
+  height: 240px;
+  overflow: auto;
+}
+
+.partida {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 16px;
+  height: 220px;
+  padding-inline: 16px;
+  overflow: auto;
+}
+
+.elements-match{
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.paragraph-title {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 4px;
+}
+}
